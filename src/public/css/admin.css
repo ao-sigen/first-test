@@ -1,0 +1,273 @@
+
+.header {
+    border-bottom: 1px solid #E0DFDE;
+    background-color: #fff;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #8B7969;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.contact-form__heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+    /* 下に余白が欲しければ */
+}
+.header__login-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    background: #8B7969;
+    color: #fff;
+    padding: 8px 28px;
+    margin: 0;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.2s;
+    border: none;
+    display: inline-block;
+}
+
+.header__login-btn:hover {
+    background: #a08c7a;
+}
+
+.admin-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.admin-title h1 {
+    text-align: center;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    width: 250px;
+    font-size: 12px;
+    background-color: #E0DFDE;
+    border: #d1d0cf solid 1px;
+    padding: 8px 10px;
+}
+
+.search-form select[name="gender"] {
+    background-color: #E0DFDE;
+    border: 1px solid #d1d0cf;
+    width: 70px;
+    font-size: 12px;
+    padding: 8px 10px;
+}
+
+.search-form select[name="category"] {
+    background-color: #E0DFDE;
+    border: 1px solid #d1d0cf;
+    width: 150px;
+    padding: 10px;
+    font-size: 12px;
+    height: 40px;
+}
+
+.search-form input[type="date"] {
+    width: 130px;
+    font-size: 12px;
+    background-color: #E0DFDE;
+    border: #d1d0cf solid 1px;
+    padding: 8px 10px;
+}
+
+.search-form button {
+    padding: 10px;
+    font-size: 15px;
+    height: 40px;
+    width: 80px;
+}
+
+.search-form button[type="submit-search"] {
+    background-color: #8B7969;
+    color: white;
+    border: none;
+}
+
+.search-form button[type="reset"] {
+    background-color: #d3b193;
+    color: white;
+    border: none;
+}
+
+
+
+/* ▼エクスポート + ページネーション */
+.search-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.export-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    /* ボタンとページネーションの間の余白 */
+    margin-top: 20px;
+}
+
+.export-pagination button {
+    background-color: #d6cec6;
+    color: #a08c7a;
+    padding: 10px 20px;
+    width: 180px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.export-pagination button:hover {
+    background-color: #a08c7a;
+}
+
+.pagination {
+    text-align: right;
+    display: flex;
+    gap: 8px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ▼テーブル */
+.contact-table {
+    background-color: #8B7969;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: #ddd solid 1px;
+}
+
+.contact-table thead th {
+    background-color: #a08c7a;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.contact-table th,
+.contact-table td {
+    background-color: #fff;
+    color: #d3b193;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.detail-button {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.detail-button:hover {
+    background-color: #f0f0f0;
+}
+/* ▼モーダル */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    width: 600px;
+    height: 700px;;
+    margin: 100px auto;
+    border-radius: 10px;
+    text-align: left;
+}
+.modal-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+}
+.modal-item label {
+    width: 150px;
+    font-weight: bold;
+}
+
+.modal-item span {
+    flex: 1;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.delete-button {
+    display: block;
+    margin: 30px auto 0;
+    background: red;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

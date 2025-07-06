@@ -1,0 +1,124 @@
+.contact-form__heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+    /* 下に余白が欲しければ */
+}
+
+.contact-form__heading h2 {
+    color: #8B7969;
+    font-size: 28px;
+    display: inline-block;
+}
+
+.contact-form__content {
+    max-width: 972px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 確認画面のコンテンツ */
+.confirm__content {
+    max-width: 972px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.confirm__heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.confirm__heading h2 {
+    color: #8B7969;
+    font-size: 28px;
+    display: inline-block;
+}
+
+/* 確認テーブル */
+.confirm-table {
+    width: 972px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.confirm-table__inner {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.confirm-table__row {
+    border-bottom: 1px solid #E0DFDE;
+}
+
+.confirm-table__row:last-child {
+    border-bottom: none;
+}
+
+.confirm-table__header {
+    background-color: #8B7969;
+    color: white;
+    padding: 15px 50px;
+    width: 300px;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.confirm-table__text {
+    background-color: white;
+    color: #8B7969;
+    padding: 15px 20px;
+    vertical-align: top;
+    border: 1px solid #E0DFDE;
+}
+
+.confirm-table__text input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #8B7969;
+    font-size: 14px;
+    outline: none;
+}
+
+/* ボタン */
+.form__button {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form__button-submit {
+    background-color: #8B7969;
+    color: white;
+    padding: 9px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form__button-submit:hover {
+    background-color: #6b5542;
+}
+
+.form__button-back {
+    color: #8B7969;
+    padding: 9px 24px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.form__button-back:hover {
+    background-color: #f0eeed;
+}

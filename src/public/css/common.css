@@ -1,0 +1,52 @@
+.header {
+    position: relative;
+    /* absolute要素の親として必要 */
+    border-bottom: 1px solid #E0DFDE;
+    background-color: #fff;
+    height: 80px;
+    /* ヘッダーの高さ指定 */
+}
+
+.header__inner {
+    display: flex;
+    justify-content: center;
+    /* ロゴを中央に */
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1230px;
+    height: 100%;
+    /* ヘッダーの高さに合わせる */
+    position: relative;
+}
+
+.header__logo {
+    color: #8B7969;
+    text-decoration: none;
+    font-size: 30px;
+    z-index: 1;
+    /* ボタンより前面 */
+}
+
+.header__login-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #8B7969;
+    color: #fff;
+    padding: 8px 28px;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: inline-block;
+    margin: 0;
+    /* 上下マージンは外す */
+}
+
+.header__login-btn:hover {
+    background: #a08c7a;
+}
