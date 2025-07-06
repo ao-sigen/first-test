@@ -29,3 +29,4 @@ Route::get('/admin', [AdminController::class, 'search'])->middleware('auth');
 Route::get('/search', [AdminController::class, 'search']);
 Route::get('/export', [AdminController::class, 'export']);
 Route::delete('/contacts/{id}', [AdminController::class, 'destroy'])->name('contacts.destroy');
+Route::get('/contacts/export', [ConfirmController::class, 'export'])->name('contacts.export');

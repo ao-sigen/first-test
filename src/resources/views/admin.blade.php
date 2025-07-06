@@ -35,10 +35,19 @@
 
         <button type="submit">検索</button>
         <button type="reset" onclick="location.href='/search'">リセット</button>
+    </form>
+    <form action="{{ route('contacts.export') }}" method="GET">
+        {{-- 検索条件を hidden input にする --}}
+        <input type="hidden" name="keyword" value="{{ request('keyword') }}">
+        <input type="hidden" name="gender" value="{{ request('gender') }}">
+        <input type="hidden" name="category" value="{{ request('category') }}">
+        <input type="hidden" name="date_from" value="{{ request('date_from') }}">
+        <input type="hidden" name="date_to" value="{{ request('date_to') }}">
+
         <div class="export-pagination">
-            <button type="submit" formaction="/export" formmethod="GET">エクスポート</button>
+            <button type="submit">エクスポート</button>
             <div class="pagination">
-                {{ $contacts->links() }}
+                {{ $contacts->appends(request()->query())->links() }}
             </div>
         </div>
     </form>
